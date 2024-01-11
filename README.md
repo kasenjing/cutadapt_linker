@@ -4,6 +4,20 @@ Modified cutadapt to make it capable of trim linker and separate reads alongside
 ------
 The purpose of this modification is that ChIA-PET Utility's incapable of processing linker longer than 32 base pair and cutadapt always trims the sequences on one side of adapter. The modification makes cutadapt finds an adapter (linker) in read 1 and/or read 2 and write both sequence on side of adapter to output read 1 and output read 2 while retaining other filter function of cutadapt (not tested).
 
+## Requirement
+```
+    python >= 3.8
+    gcc
+    setuptools_scm
+```
+## Installation
+```
+    git clone https://github.com/kasenjing/cutadapt_linker.git
+    cd cutadapt_linker
+    python setup.py bdist_egg
+    python setup.py install
+```
+
 ## Usage
 
 ```
