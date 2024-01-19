@@ -1275,7 +1275,11 @@ class ReverseComplementerLinkerPaired(PairedEndModifier):
                 r2_trimmed = r2
                 r1_real_matches = []
                 r2_real_matches = []
+        
 
+        r1_trimmed.name = r1_trimmed.name + " " + '-'.join(linker_type)
+        r2_trimmed.name = r2_trimmed.name + " " + '-'.join(linker_type)
+        
         if r1_real_matches:
             self.adapter_cutter1.with_adapters += 1  # type: ignore
             for match in r1_real_matches:
