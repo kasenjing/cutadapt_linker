@@ -3,7 +3,7 @@ requires = ["setuptools >= 63", "setuptools_scm[toml] >= 6.2", "Cython >= 0.29.2
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cutadapt"
+name = "cutadapt2"
 authors = [
     {name = "Marcel Martin", email = "marcel.martin@scilifelab.se"}
 ]
