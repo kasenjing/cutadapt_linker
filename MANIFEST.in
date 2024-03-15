@@ -6,8 +6,8 @@ include pyproject.toml
 include doc/*.rst
 include doc/conf.py
 include doc/Makefile
-include src/cutadapt/*.c
-include src/cutadapt/*.pyx
+include src/cutadapt2/*.c
+include src/cutadapt2/*.pyx
 include tests/*.py
 graft tests/data
 graft tests/cut

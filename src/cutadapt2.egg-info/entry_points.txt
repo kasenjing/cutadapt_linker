@@ -1,0 +1,2 @@
+[console_scripts]
+cutadapt2 = cutadapt2.cli:main_cli

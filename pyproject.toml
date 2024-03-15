@@ -29,10 +29,9 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://cutadapt.readthedocs.io/"
 "Changelog" = "https://cutadapt.readthedocs.io/en/stable/changes.html"
-"Repository" = "https://github.com/marcelm/cutadapt/"
 
 [project.scripts]
-cutadapt = "cutadapt.cli:main_cli"
+cutadapt2 = "cutadapt2.cli:main_cli"
 
 [project.optional-dependencies]
 dev = [
@@ -46,7 +45,7 @@ dev = [
 ]
 
 [tool.setuptools.exclude-package-data]
-cutadapt = ["*.pyx", "*.c", "*.h"]
+cutadapt2 = ["*.pyx", "*.c", "*.h"]
 
 [tool.pytest.ini_options]
 filterwarnings = [
@@ -56,7 +55,7 @@ testpaths = ["tests"]
 xfail_strict = true
 
 [tool.setuptools_scm]
-write_to = "src/cutadapt/_version.py"
+write_to = "src/cutadapt2/_version.py"
 
 [tool.mypy]
 warn_unused_configs = true
