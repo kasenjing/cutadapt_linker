@@ -21,7 +21,7 @@ The purpose of this modification is that ChIA-PET Utility's incapable of process
 ## Usage
 
 ```
-    cutadapt -o linker_left.fq.gz -p linker_right.fq.gz --linker -b ACGCGATATCTTATTGACT -O 6 --discard-untrimmed -j 4 -e 2 -m 18 r1_input.fq.gz r2_input.fq.gz
+    cutadapt2 -o linker_left.fq.gz -p linker_right.fq.gz --linker -b ACGCGATATCTTATTGACT -O 6 --discard-untrimmed -j 4 -e 2 -m 18 r1_input.fq.gz r2_input.fq.gz
 ```
 
 Parameter
